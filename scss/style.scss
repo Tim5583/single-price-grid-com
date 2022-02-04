@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    font-size: 16px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+$Cyan: hsl(179, 62%, 43%);
+$Dark-Cyan: #2bb3b1;
+$Bright-Yellow: hsl(71, 73%, 54%);
+$Light-Gray: hsl(204, 43%, 93%);
+$Grayish-Blue: hsl(218, 22%, 67%);
+
+body {
+    background-color: $Light-Gray;
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.container {
+    max-width: 370px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.join-com {
+    background-color: white;
+    padding: 2rem;
+    .h1 {
+        color: $Cyan;
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        color: $Bright-Yellow;
+        margin: 2rem 0;
+        font-size: 1.4rem;
+    }
+
+    p {
+        color: $Grayish-Blue;
+        line-height: 2;
+        font-size: 1rem;
+    }
+}
+
+.second-section {
+
+    color: white;
+    .monthly {
+        padding: 2rem;
+        background-color: $Dark-Cyan;
+
+        .price {
+            margin: 1.5rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            .price-number {
+                font-size: 2rem;
+                font-weight: 700;
+            }
+
+            .price-text {
+                color: $Light-Gray;
+                padding-left: 1rem;
+            }
+        }
+
+        .btn {
+            width: 100%;
+            height: 3rem;
+            margin: auto;
+            font-weight: 700;
+            color: white;
+            background-color: $Bright-Yellow;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.104);
+            margin-top: 2rem;
+            font-size: 1.15rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .why-us {
+        padding: 2rem;
+        background-color: #4abebd;
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: $Light-Gray;
+            padding-bottom: .3rem;
+        }
+    }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+@media (min-width: 800px) {
+    .container {
+        max-width: 800px;
+    }
+
+    .second-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

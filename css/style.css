@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+:root {
+  font-size: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+}
+
+body {
+  background-color: #e5eff5;
+}
+
+main {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.container {
+  max-width: 370px;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.join-com {
+  background-color: white;
+  padding: 2rem;
+}
+
+.join-com .h1 {
+  color: #2ab2af;
+  font-size: 1.5rem;
+}
+
+.join-com h2 {
+  color: #c0df34;
+  margin: 2rem 0;
+  font-size: 1.4rem;
+}
+
+.join-com p {
+  color: #98a6bd;
+  line-height: 2;
+  font-size: 1rem;
+}
+
+.second-section {
+  color: white;
+}
+
+.second-section .monthly {
+  padding: 2rem;
+  background-color: #2bb3b1;
+}
+
+.second-section .monthly .price {
+  margin: 1.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.second-section .monthly .price .price-number {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.second-section .monthly .price .price-text {
+  color: #e5eff5;
+  padding-left: 1rem;
+}
+
+.second-section .monthly .btn {
+  width: 100%;
+  height: 3rem;
+  margin: auto;
+  font-weight: 700;
+  color: white;
+  background-color: #c0df34;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.104);
+          box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.104);
+  margin-top: 2rem;
+  font-size: 1.15rem;
+}
+
+.second-section .monthly .btn:hover {
+  cursor: pointer;
+}
+
+.second-section .why-us {
+  padding: 2rem;
+  background-color: #4abebd;
+}
+
+.second-section .why-us h2 {
+  margin-bottom: 1rem;
+}
+
+.second-section .why-us p {
+  color: #e5eff5;
+  padding-bottom: .3rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media (min-width: 800px) {
+  .container {
+    max-width: 800px;
+  }
+  .second-section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+/*# sourceMappingURL=style.css.map */
